@@ -8,10 +8,8 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ClienteListaComponent implements OnInit {
 
-  path: string = ''
+  constructor(){
 
-  constructor(activatedRoute: ActivatedRoute) {
-    this.path = activatedRoute.snapshot.url[0].path
   }
 
   ngOnInit(): void {

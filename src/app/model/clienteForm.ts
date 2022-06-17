@@ -1,5 +1,6 @@
 export interface ClienteForm {
     nome: string;
+    cpf: string
     telefone: string;
     email: string;
     rua: string;

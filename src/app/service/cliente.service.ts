@@ -52,7 +52,7 @@ export class ClienteService {
     }
 
     salvaCliente(cliente: ClienteForm) {
-        return this.http.post<ClienteForm>(`${this.api}`, this.httpOptions)
+        return this.http.post<ClienteForm>(`${this.api}`, cliente)
             .pipe(
                 retry(2),
                 catchError(this.handleError)

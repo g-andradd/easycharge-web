@@ -4,13 +4,14 @@ import { Injectable } from '@angular/core';
 import { catchError, retry, throwError } from 'rxjs';
 
 import { Cliente } from '../model/cliente';
+import { ClienteForm } from '../model/clienteForm';
 import { PaginaCliente } from '../model/pagina-cliente';
 
 @Injectable({
     providedIn: 'root'
 })
+
 export class ClienteService {
-    
 
     private api = 'http://localhost:8080/api/clientes'
 
@@ -41,13 +42,21 @@ export class ClienteService {
                 catchError(this.handleError)
             );
     }
-    
+
     atualizaStatusCliente(cliente: Cliente) {
-      return this.http.put<Cliente>(`${this.api}/status/${cliente.id}`, this.httpOptions)
-      .pipe(
-          retry(1),
-          catchError(this.handleError)
-      );
+        return this.http.put<Cliente>(`${this.api}/status/${cliente.id}`, this.httpOptions)
+            .pipe(
+                retry(1),
+                catchError(this.handleError)
+            );
+    }
+
+    salvaCliente(cliente: ClienteForm) {
+        return this.http.post<ClienteForm>(`${this.api}`, this.httpOptions)
+            .pipe(
+                retry(2),
+                catchError(this.handleError)
+            );
     }
 
     // Manipulação de erros

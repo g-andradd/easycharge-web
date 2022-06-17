@@ -8,7 +8,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
-  path: string ='cliente';
+  @Input() path: string ='';
   constructor() {
   }
 

@@ -43,7 +43,7 @@
         <small>Informe o email do cliente</small>
     </div>
 
-    <div class="col-md-12 pt-2">
+    <div class="col-md-12 pt-5">
         <h4>Endereço:</h4>
     </div>
 
@@ -85,9 +85,10 @@
         </div>
         <small>Informe a cidade do cliente</small>
     </div>
+    
     <div class="col-md-4">
         <label for="estado" class="form-label fs-5">UF Estado</label>
-        <select formControlName="estado" id="estado" class="form-select">
+        <select formControlName="estado" id="estado" class="form-control">
             <option selected disabled value="">Selecione...</option>
             <option value="AC">AC</option>
             <option value="AL">AL</option>
@@ -123,7 +124,7 @@
         <small>Selecione o estado do cliente</small>
     </div>
 
-    <div class="col-md-12 pt-2">
+    <div class="col-md-12 pt-5">
         <h4>Cliente:</h4>
     </div>
     <div class="col-md-4">
@@ -148,8 +149,9 @@
     </div>
     <div class="col-md-4">
         <label for="status" class="form-label fs-5">Status</label>
-        <select  formControlName="status" id="status" class="form-select">
-            <option selected value="ATIVO">Ativo</option>
+        <select  formControlName="status" id="status" class="form-control">
+            <option selected disabled value="">Selecione...</option>
+            <option value="ATIVO">Ativo</option>
             <option value="SUSPENSO">Suspenso</option>
         </select>
         <small>Selecione o status do cliente</small>
@@ -160,7 +162,7 @@
 
     <div class="col-12">
         <div class="d-grid gap-2 col-6 mx-auto mt-4 pt-3 pb-3">
-            <button class="btn btn-primary fs-5" type="submit">Cadastrar</button>
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Cadastrar</button>
         </div>
     </div>
     <div class="col-12">

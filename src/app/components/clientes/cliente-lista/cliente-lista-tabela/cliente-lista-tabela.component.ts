@@ -41,7 +41,12 @@ export class ClienteListaTabelaComponent implements OnInit {
 
   atualizaStatusCliente(cliente: Cliente): void {
     this.clienteService.atualizaStatusCliente(cliente).subscribe(() => {
-      this.getPaginatedClientes();
+      const item = this.clientes.find(item => item.id === cliente.id);
+      if(item?.status === 'ATIVO'){
+        item!.status = 'SUSPENSO';
+      } else {
+        item!.status = 'ATIVO';
+      }
     });
   }
 

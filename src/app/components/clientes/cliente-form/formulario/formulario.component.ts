@@ -40,7 +40,7 @@ export class FormularioComponent implements OnInit {
 
     this.clienteService.salvaCliente(cliente)
       .subscribe(() => {
-        this.router.navigate(['clientes/lista'])
+        this.router.navigate(['clientes'])
       })
   }
 

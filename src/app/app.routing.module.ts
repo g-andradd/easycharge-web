@@ -10,23 +10,23 @@ import { NotFoundComponent } from './components/errors/not-found/not-found.compo
 
 
 const routes: Routes = [
-    { 
-        path: 'clientes/lista', component: ClienteListaComponent,
+    {
+        path: 'clientes', component: ClienteListaComponent,
         resolve: {
             clientes: ClienteListaTabelaResolver
         }
-    }, 
-    { 
-        path: 'clientes/formulario', component: ClienteFormComponent 
     },
-    { 
-        path: 'dividas/lista', component: DividaListaComponent ,
+    {
+        path: 'clientes/formulario', component: ClienteFormComponent
+    },
+    {
+        path: 'dividas', component: DividaListaComponent ,
         resolve: {
             dividas: DividaListaTabelaResolver
         }
     },
-    { 
-        path: '**', component: NotFoundComponent 
+    {
+        path: '**', component: NotFoundComponent
     }
 ]
 

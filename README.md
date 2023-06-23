@@ -1,27 +1,30 @@
-# EasychargeWeb
+# Easycharge Web
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
+## Descrição
+O Easycharge Web é uma aplicação frontend desenvolvida em Angular para gerenciar clientes e suas dívidas. A aplicação permite visualizar a lista de clientes e suas respectivas dívidas, cadastrar novos clientes, cadastrar e editar dívidas. Futuramente, serão adicionadas funcionalidades de envio de cobranças por email e SMS e verificação de status de pagamento das dívidas.
 
-## Development server
+## Pré-requisitos
+- Node.js (versão 14.15.0 ou superior)
+- Angular CLI (versão 14.0.0)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Instalação
+1. Clone este repositório.
+2. Navegue até o diretório do projeto Easycharge Web.
+3. Execute o comando `npm install` para instalar as dependências.
+4. Execute o comando `ng serve` para iniciar o servidor de desenvolvimento.
+5. Acesse `http://localhost:4200` no seu navegador para utilizar a aplicação.
 
-## Code scaffolding
+## Funcionalidades
+- Visualizar a lista paginada de clientes e suas dívidas.
+- Cadastrar e editar clientes.
+- Cadastrar e editar dívidas associadas aos clientes.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Contribuição
+1. Abra uma issue para discutir suas ideias ou reportar problemas.
+2. Faça um fork do repositório e crie uma nova branch.
+3. Realize as alterações necessárias.
+4. Teste as modificações e verifique se tudo está funcionando corretamente.
+5. Envie um pull request descrevendo as alterações realizadas.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Licença
+Este projeto está licenciado sob a [MIT License](LICENSE).
